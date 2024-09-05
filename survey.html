@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>2027 ELECTIONS VOTERS SURVEY</title>
+    	<link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">VOTER SURVEY</h1>
+    <p id="description">Thank you for taking some time out of your busy schedule to fill the following voter survey in preparation for the 2027 presidential elections.</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Chris Standa" required ></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="standa_inc@hotmail.com" required></label>
+      <label id="number-label">Age: <input id="number" type="number" min="13" max="100" placeholder="25"></label>
+      <select id="dropdown" class="dropdown">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <legend>Are you eligible to vote?</legend>
+      <label>Yes <input type="radio" name="eligibility" class="votereligibility"  value="eligible" checked></label>
+      <label>No <input type="radio" name="eligibility" class="votereligibility"  value="ineligible"></label>
+
+<legend>I: (Check all that apply)</legend>
+      <label for="check-all-that-apply">- have an ID <input type="checkbox" name="idstatus" class="status" value="withid"></label>
+
+      <label for="check-all-that-apply">- don't have an ID <input type="checkbox"  name="noid" class="status"  value="checkoption"></label>
+
+      <label for="check-all-that-apply">- have applied for an ID but yet to be issued <input type="checkbox" name="idapplied" class="status"   value="checkoption"></label>
+
+      <label for="check-all-that-apply">- have not applied for an ID <input type="checkbox" name="idnotapplied" class="status"   value="checkoption"></label>
+
+      <label for="check-all-that-apply">- plan to vote <input type="checkbox"  name="tovote" class="status"   value="checkoption"></label>
+
+      <label for="check-all-that-apply">- am not interested in voting <input type="checkbox"  name="notinterested" class="status"  value="checkoption"></label>
+
+<legend>Any comments or suggestions? </legend>
+      <textarea id="comments" name="comments" rows="5" placeholder="Type your comments or suggestions here.."></textarea>
+      <button type="submit" id="submit">SUBMIT</button>
+      </form>
+    </body>
+  </html>
